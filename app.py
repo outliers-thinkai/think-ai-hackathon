@@ -194,9 +194,10 @@ def main():
             st.write(raw_data)
         st.sidebar.image('/Users/mountasser/Downloads/Sentiments_Analysis_Darija_Tweets-main/1337ai.png')
         st.sidebar.image('/Users/mountasser/Downloads/Sentiments_Analysis_Darija_Tweets-main/math-maroc.png')
-        st.title("Moroccan Review Poll Solution")
+        st.title("Welcome to DariGPT Platform")
         st.markdown("💳 What do Moroccans think through their internet posting?")
         st.markdown("💳 How satisified are Moroccans with your products? Come find out.")
+        st.markdown("💳 Talk to ChatGPT in Darija and receive all the information in English he has!")
         st.markdown("💳 This is a project made at ThinkAI Hackathon hosted at 1337 by Math&Maroc and 1337AI")
         #image1 = Image.open('/Users/mountasser/Desktop/Data Mining Project/Images/ENSIAS.png')
         #st.image(image1, caption='ENSIAS')
@@ -206,9 +207,9 @@ def main():
         with st.form("my_form"):
             new_review = st.text_input("Kindly enter your Moroccan review: ")
 
-            def Analyze(new_review):
-                y = pipeline.predict([new_review])
-                return "that is a {} feedback".format(y[0])
+            #def Analyze(new_review):
+            #    y = pipeline.predict([new_review])
+            #    return "that is a {} feedback".format(y[0])
 
             submitted = st.form_submit_button("Classify Sentiment!")
 
@@ -217,10 +218,8 @@ def main():
                 if new_prediction[0] == 'negative':
                     st.title("Ops, that was not so good after all!")
                 elif new_prediction[0] == 'positive':
-                    st.title("Yay, that was a positive one <3")
                 else:
                     st.title("That was a neutral one :)")
-            #st.write("Outside the form")
 
     if selected == "DarijaGPT":
         with st.form("DarijaGPT"):
@@ -231,7 +230,6 @@ def main():
             if submitted:
                 output = DarijaGPT(prompt)
                 st.title(output)
-            #st.write("Outside the form")
 
 
 if __name__ == '__main__':
