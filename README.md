@@ -6,6 +6,8 @@ This is a guide to our solution for the Think-AI Hackathon.
  The difficulties Moroccans have accessing AI solutions are addressed by our Moroccan Darija AI platform, which offers a variety of AI products in Darija meant to expand. We want to boost the adoption of AI more broadly and enhance international cooperation and communication by providing solutions in their native tongue.
 
 ## Demonstration
+   ### Demo:
+   Here is the link to the [demo video](https://drive.google.com/file/d/171VhbWy__gCNyzWNz7EjuYdx-_ZNKTwi/view?usp=share_link).
 ### Hompage
 ![Home page](/demo-screenshots/Homepage.png)
 ### Running the solution on your local machine:
